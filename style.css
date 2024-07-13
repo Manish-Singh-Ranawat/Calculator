@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  background-color: #3a4452;
+  padding: 1.25rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+.ans-container{
+  margin: 0 1rem;
+}
+.row-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: space-evenly;
+  padding-bottom: .5rem;
+}
+.row {
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+  gap: .9rem;
+}
+.ans-block {
+  max-width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  text-align: end;
+  padding-right: 1.2rem;
+  font-weight: 500;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.ans-block::-webkit-scrollbar {
+  display: none;
+  background-color: white;
+}
+.placeholder {
+  color: crimson;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: end;
+  padding-right: 1.2rem;
+}
+.previous {
+  height: 2rem;
+  overflow-y: scroll;
+}
+.previous::-webkit-scrollbar {
+  appearance: none;
+  width: 2px;
+  background-color: rgba(227, 249, 255, 0.5);
+}
+.line {
+  width: 100%;
+  background-color: #fb7c14;
+  height: 1px;
+  margin-bottom: 1.25rem;
+  margin-top: .1rem;
+}
+.answered {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.hide {
+  display: none;
+}
+button {
+  text-align: center;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: transparent;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 30%;
+  box-shadow: -2px -2px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  opacity: 0.7;
+}
+button:active {
+  opacity: 0.5;
+}
+.operator {
+  color: #33ffd8;
+}
